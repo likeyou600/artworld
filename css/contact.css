@@ -1,0 +1,21 @@
+@media only screen and (min-width:576px) {
+    .incontainer {
+        width: 35%;
+        margin: 60px auto 0 auto;
+    }
+    .card {
+        box-shadow: rgb(0 0 0 / 45%) 7px 11px 12px -2px;
+        margin-bottom: 0;
+        border: none!important;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .card {
+        box-shadow: rgb(0 0 0 / 45%) 7px 11px 12px -2px;
+        margin-bottom: 0;
+        border: none!important;
+        width: 50%;
+        margin: 20px auto;
+    }
+}

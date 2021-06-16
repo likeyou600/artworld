@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>藝想世界</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/map_mobile.css" />
+    <link rel="stylesheet" href="css/taiwan.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/rwdtable.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Yusei+Magic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <meta name="description" content="全台藝文活動~~~" />
+
+</head>
+
+<body class="bak">
+    <div class="loadingup" id="loadingup"></div>
+    <div id="loading">
+        <img src="material/loading.gif" class="img-responsive" />
+        <div class="process">
+            <div id="progress" class="red"></div>
+            <p class="loadpsize">第一次載入會花點時間<br>敬請見諒</p>
+        </div>
+    </div>
+    <div class="container" style="max-width: 98%">
+        <header>
+
+            <nav class="navbar navbar-expand-sm navbar-bg navbar-light ">
+
+
+
+                <input type="image" src="material/chu.png" onclick="location.href='home.html'" class="iconcss">
+                <div class="nowsite">
+                    <span class="before">現在位置</span> 活動搜尋
+                </div>
+
+                <p class="arttitle">藝想世界</p>
+
+                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <div class="navbar-nav setting1 ">
+                        <div class="column text-center">
+
+                            <a class="navbar-brand userfontfamily2 buttonmore" href="map.html?site=map&category=1,5,17">藝文地圖</a>
+
+                            <a class="navbar-brand userfontfamily2 buttonmore" href="sellticket.html">售票網站</a>
+
+                            <a class="navbar-brand userfontfamily2 buttonmore" href="contact.html">聯絡我們</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </nav>
+        </header>
+        <div class="backdiv">
+            <input type="button" class="back" onclick="history.back()" value="回到上一頁"></input>
+        </div>
+        <div class="mynewselect">
+
+            <div class="first">
+                <label for="searchname">活動名稱:</label>
+                <input type="text" name="searchname" id="searchname" class="" placeholder="請輸入想查詢的" />
+            </div>
+            <div class="line"></div>
+            <label for="searchposition">縣市名稱:</label>
+            <select class="form-select ra" aria-label="Default select example" name="searchposition" id="searchposition">
+                <option value="1000">全部</option>
+                <option value="0">臺北</option>
+                <option value="1">基隆</option>
+                <option value="2">新北</option>
+                <option value="3">桃園</option>
+                <option value="4">新竹</option>
+                <option value="5">苗栗</option>
+                <option value="6">臺中</option>
+                <option value="7">南投</option>
+                <option value="8">彰化</option>
+                <option value="9">雲林</option>
+                <option value="10">嘉義</option>
+                <option value="11">臺南</option>
+                <option value="12">高雄</option>
+                <option value="13">屏東</option>
+                <option value="14">宜蘭</option>
+                <option value="15">花蓮</option>
+                <option value="16">臺東</option>
+            </select>
+            <div class="line"></div>
+            <label for="searchtimefrom">活動開始日期:</label>
+            <input type="date" name="searchtimefrom" id="searchtimefrom" class="" placeholder="EX:XXXX/X/X" />
+            <label for="searchtimeto">活動結束日期:</label>
+            <input type="date" name="searchtimeto" id="searchtimeto" class="" placeholder="EX:XXXX/X/X" />
+
+            <div class="line"></div>
+
+            <div class="checkGroup ">
+                <label>活動類別:</label>
+                <label class="checked">
+                    <input type="checkbox" name="searchcategory" value="2000" id="checkbox2000" onclick="newchange()"
+                        checked>
+                    全部
+                </label>
+
+                <label>
+                    <input type="checkbox" name="searchcategory" value="1,5,17" id="checkbox0" onclick="setfalse()">
+                    音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="searchcategory" value="2,3,11" id="checkbox1" onclick="setfalse()">
+                    表演
+                </label>
+                <label>
+                    <input type="checkbox" name="searchcategory" value="4" id="checkbox2" onclick="setfalse()">
+                    親子
+                </label>
+                <label>
+                    <input type="checkbox" name="searchcategory" value="6,7,200" id="checkbox3" onclick="setfalse()">
+                    展演
+                </label>
+                <label>
+                    <input type="checkbox" name="searchcategory" value="8" id="checkbox4" onclick="setfalse()">
+                    電影
+                </label>
+
+                <label>
+                    <input type="checkbox" name="searchcategory" value="13,14" id="checkbox5" onclick="setfalse()">
+                    競賽
+                </label>
+                <label>
+                    <input type="checkbox" name="searchcategory" value="15" id="checkbox6" onclick="setfalse()">
+                    其他
+                </label>
+
+            </div>
+            <div class="line"></div>
+            <input type="button" value="查詢活動" id="searchnew" style="    margin-bottom: 10px;">
+        </div>
+
+        <table class="rwd-table table table-striped " style="    background-color: #ffffffc7; ">
+            <thead>
+                <tr>
+                    <th scope="col" class="showwidth">序號</th>
+                    <th scope="col" class="showwidth">類別</th>
+                    <th scope="col">日期</th>
+                    <th scope="col">活動名稱</th>
+                    <th scope="col" class="showwidth">縣市</th>
+                    <th scope="col">地點</th>
+                    <th scope="col">地址</th>
+
+                </tr>
+            </thead>
+            <tbody id="tableshow">
+                <!-- <tr>
+                    <th scope="row" >(fi+1)</th>
+                    <td>filterdata_category</td>
+                    <td>filterdata[fi].startDate+"~"+filterdata[fi].endDate;</td>
+                    <td>filterdata[fi].title</td>
+                    <td>filterdata[fi].showInfo[0].location.substring(0, 3)</td>
+                    <td>filterdata[fi].showInfo[0].locationName+"(+filterdata[fi].showInfo[0].location+)"+</td>
+                  </tr> -->
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="js/processdata.js"></script>
+    <script src="js/changepage.js"></script>
+</body>
+
+</html>

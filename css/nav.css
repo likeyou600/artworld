@@ -1,0 +1,70 @@
+@media only screen and (min-width: 576px) {
+    .arttitle{
+        font-family: 'Yusei Magic', sans-serif;
+        margin-bottom: 0px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 40px;
+        z-index: -1;
+        font-weight: 100;
+    }
+    .before{
+        padding-right: 15px;
+        margin-right: 8px;
+        background: url(../material/path.png) no-repeat right center;
+    }
+    .nowsite{
+        margin-left: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 3px;
+    }
+    .buttonmore{
+        background-color:#b6f1d2;
+        border-radius: 10px;
+        border-style: dashed;
+        border-width: 2px;
+    }
+
+}
+
+@media only screen and (max-width:576px) {
+    .arttitle{
+        font-size: 40px;
+    font-family: 'Yusei Magic', sans-serif;
+    margin-bottom: 2px;
+    z-index: -1;
+    font-weight: 100;
+    }
+    .nowsite{
+        display: none;
+    }
+    .buttonmore{
+        background-color: rgb(186 255 219);
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 2px;
+        margin-right: 5px!important;
+        margin-bottom: 5px;
+    }
+}
+
+.iconcss{
+    width: 50px;
+}
+.navheader{
+    height: 40px;
+}
+.red{
+    background-color: red;
+    border-radius: 20px;
+}
+.green{
+    background-color: green;
+    border-radius: 20px;
+}
+.buttonmore:hover{
+    background-color: rgb(156 249 200);
+}
