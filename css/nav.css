@@ -1,47 +1,55 @@
+@font-face {
+    font-family: 'pigmo';
+    font-style: normal;
+    src: url('../material/Pigmo.otf');
+}
+
 @media only screen and (min-width: 576px) {
-    .arttitle{
-        font-family: 'Yusei Magic', sans-serif;
+    .arttitle {
+        font-family: 'pigmo';
         margin-bottom: 0px;
         position: absolute;
         left: 0;
         right: 0;
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
         z-index: -1;
         font-weight: 100;
     }
-    .before{
+    .before {
         padding-right: 15px;
         margin-right: 8px;
         background: url(../material/path.png) no-repeat right center;
     }
-    .nowsite{
+    .nowsite {
         margin-left: 20px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 3px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 3px;
     }
-    .buttonmore{
-        background-color:#b6f1d2;
+    .buttonmore {
+        background-color: #b6f1d2;
         border-radius: 10px;
         border-style: dashed;
         border-width: 2px;
     }
-
 }
 
 @media only screen and (max-width:576px) {
-    .arttitle{
-        font-size: 40px;
-    font-family: 'Yusei Magic', sans-serif;
-    margin-bottom: 2px;
-    z-index: -1;
-    font-weight: 100;
+    .navbar {
+        padding: 0!important;
     }
-    .nowsite{
+    .arttitle {
+        font-size: 53px;
+        font-family: 'pigmo';
+        margin-bottom: 2px;
+        z-index: -1;
+        font-weight: 100;
+    }
+    .nowsite {
         display: none;
     }
-    .buttonmore{
+    .buttonmore {
         background-color: rgb(186 255 219);
         border-radius: 10px;
         border-style: solid;
@@ -51,20 +59,24 @@
     }
 }
 
-.iconcss{
+.iconcss {
     width: 50px;
 }
-.navheader{
+
+.navheader {
     height: 40px;
 }
-.red{
+
+.red {
     background-color: red;
     border-radius: 20px;
 }
-.green{
+
+.green {
     background-color: green;
     border-radius: 20px;
 }
-.buttonmore:hover{
+
+.buttonmore:hover {
     background-color: rgb(156 249 200);
 }

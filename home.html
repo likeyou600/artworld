@@ -3,22 +3,52 @@
 
 <head>
     <title>藝想世界</title>
+    <link rel="icon" href="material/artworld.ico" type="image/x-icon" />
+    <meta name="description" content="網羅全台藝文活動~" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="css/map.css" />
     <link rel="stylesheet" href="css/map_mobile.css" />
     <link rel="stylesheet" href="css/taiwan.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home_mobile.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Yusei+Magic&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
 </head>
 
-<body class="bak">
-
+<body class="bak" style="">
+    <div class="loadingup" id="loadingup"></div>
+    <div id="loading">
+        <img src="material/loading.gif" class="img-responsive" />
+        <div class="process">
+            <div id="progress" class="red"></div>
+            <p class="loadpsize">第一次載入會花點時間<br>敬請見諒</p>
+        </div>
+    </div>
     <div class="container" style="max-width: 98%">
-        <input type="button" value="音樂" onclick="changepage(1,5,17)">
-        <input type="button" value="表演" onclick="changepage(2,3,11)">
 
+        <div class="incontainer">
+
+            <img src="material/home/title.png" alt="標題" class="imgtitle">
+            <img src="material/home/title2.png" alt="標題" class="imgtitle2">
+            <img src="material/home/1.png" alt="音樂" onclick="changepage(1,5,17)" class="img1">
+            <img src="material/home/2.png" alt="表演" onclick="changepage(2,3,11)" class="img2">
+            <img src="material/home/3.png" alt="親子" onclick="changepage(4)" class="img3">
+            <img src="material/home/4.png" alt="展演" onclick="changepage(6,7,200)" class="img4">
+            <img src="material/home/5.png" alt="電影" onclick="changepage(8)" class="img5">
+            <img src="material/home/6.png" alt="競賽" onclick="changepage(13,14)" class="img6">
+            <img src="material/home/7.png" alt="其他" onclick="changepage(15)" class="img7">
+
+            <div class="infor font1">音樂</div>
+            <div class="infor font2">表演</div>
+            <div class="infor font3">親子</div>
+            <div class="infor font4">展演</div>
+            <div class="infor font5">電影</div>
+            <div class="infor font6">競賽</div>
+            <div class="infor font7">其他</div>
+        </div>
+    </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -26,6 +56,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/changepage.js"></script>
+    <script src="js/close.js"></script>
 </body>
 
 </html>

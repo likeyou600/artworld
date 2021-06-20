@@ -16,11 +16,14 @@
     }
     #loading {
         position: fixed;
-        top: 30%;
+        top: 18%;
         left: 0;
         right: 0;
         text-align: center;
         z-index: 999;
+    }
+    #loading img {
+        width: 20%;
     }
     .loadpsize {
         background-color: #faebd7a6;

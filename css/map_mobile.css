@@ -1,31 +1,32 @@
 @media only screen and (max-width:576px) {
-   
-    *{
+    * {
         border: 0px solid #333;
     }
-    .now{
+    .now {
         border: 3px solid #fff;
         box-sizing: border-box;
     }
-    .colors{
+    .colors {
         position: fixed;
     }
-    .color{
+    .color {
         width: 40px;
         height: 40px;
         border-radius: 40px;
         margin: 10px;
     }
-    
     #loading {
         position: fixed;
-        top: 30%;
+        top: 25%;
         left: 0;
         right: 0;
         text-align: center;
         z-index: 999;
     }
-    .process{
+    #loading img {
+        width: 85%;
+    }
+    .process {
         width: 65%;
         margin: 0 auto;
     }
@@ -36,11 +37,11 @@
         height: 100vh;
         background-color: rgb(5 5 5 / 60%);
     }
-    .loadpsize{
+    .loadpsize {
         background-color: #faebd7a6;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-size: 21px;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-size: 21px;
     }
     .cate_select {
         background-color: antiquewhite;
@@ -57,17 +58,17 @@
         font-weight: 600;
         border-style: double;
     }
-    .card{
+    .card {
         margin-bottom: 10px;
     }
-    .nav{
+    .nav {
         margin-top: 10px;
     }
-    #myselect{
+    #myselect {
         text-align: center;
         font-size: 18px;
     }
-    .title{
+    .title {
         font-size: 28px;
         font-family: 'Yusei Magic', sans-serif;
         margin-bottom: 2px;

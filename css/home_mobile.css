@@ -1,0 +1,103 @@
+@media only screen and (max-width: 576px) {
+    img {
+        width: 140px;
+        position: absolute;
+        cursor: pointer;
+        animation: shake 0.3s;
+        animation-iteration-count: infinite;
+    }
+    img:hover {}
+    @keyframes shake {
+        35% {
+            transform: rotate(-1deg);
+        }
+        80% {
+            transform: rotate(1deg);
+        }
+    }
+    .incontainer {
+        position: relative;
+        height: 100vh;
+    }
+    .imgtitle {
+        display: none;
+    }
+    .imgtitle2 {
+        border-radius: 25px;
+        background-color: #f0f8ffba;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 102%;
+    }
+    .img1 {
+        top: 14%;
+        left: 0%;
+    }
+    .img2 {
+        top: 14%;
+        right: 0%;
+    }
+    .img3 {
+        top: 37%;
+        left: 0%;
+    }
+    .img4 {
+        top: 37%;
+        right: 0%;
+    }
+    .img5 {
+        top: 60%;
+        left: 0%;
+    }
+    .img6 {
+        top: 60%;
+        right: 0%;
+    }
+    .img7 {
+        top: 76%;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .infor {
+        display: inline-block;
+        background: #73c1ff;
+        font-size: 30px;
+        border-radius: 19px;
+        font-family: 'pigmo';
+        color: #edf7ff;
+        position: absolute;
+    }
+    .font1 {
+        top: 31%;
+        left: 12%;
+    }
+    .font2 {
+        top: 31%;
+        right: 12%;
+    }
+    .font3 {
+        top: 54.4%;
+        left: 12%;
+    }
+    .font4 {
+        top: 54.4%;
+        right: 12%;
+    }
+    .font5 {
+        top: 77%;
+        left: 11%;
+    }
+    .font6 {
+        top: 77%;
+        right: 11%;
+    }
+    .font7 {
+        top: 93%;
+        right: 40%;
+    }
+    #loading img {
+        position: relative;
+    }
+}
