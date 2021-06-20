@@ -3,10 +3,11 @@
         width: 140px;
         position: absolute;
         cursor: pointer;
+    }
+    img:hover {
         animation: shake 0.3s;
         animation-iteration-count: infinite;
     }
-    img:hover {}
     @keyframes shake {
         35% {
             transform: rotate(-1deg);

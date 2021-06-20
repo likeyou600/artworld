@@ -1,17 +1,21 @@
 .twt-map-name,
 .twt-map-name-1 {
     position: absolute;
-    color:  #000094;
+    color: #000094;
     pointer-events: none;
 }
+
 .twt-map-path {
     position: absolute;
     fill: #ebe8fd;
+    cursor: pointer;
 }
+
 #keelung,
 #taipei {
     fill: #ebe8fd;
 }
+
 #hsinchucity,
 #taichungcity,
 #chiayicity,
@@ -20,159 +24,157 @@
     fill: green;
     display: none;
 }
+
 @media only screen and (min-width: 576px) {
+    .twt-map-name {
+        font-size: 2vw;
+    }
+    .twt-map-name-1 {
+        font-size: 1.3vw;
+    }
+    #name-keelung {
+        top: 5vw;
+        left: 38vw;
+    }
+    #name-taipei {
+        top: 5vw;
+        left: 34.1vw;
+    }
+    #name-newtaipei {
+        top: 10vw;
+        left: 33vw;
+    }
+    #name-taoyuan {
+        top: 8.5vw;
+        left: 25.5vw;
+    }
+    #name-hsinchu {
+        top: 14vw;
+        left: 24vw;
+    }
+    #name-miaoli {
+        top: 19vw;
+        left: 21vw;
+    }
+    #name-taichung {
+        top: 25vw;
+        left: 19vw;
+    }
+    #name-changhua {
+        top: 32vw;
+        left: 10vw;
+    }
+    #name-nantou {
+        top: 34vw;
+        left: 22vw;
+    }
+    #name-yunlin {
+        top: 37.1vw;
+        left: 9vw;
+    }
+    #name-chiayi {
+        top: 42vw;
+        left: 11vw;
+    }
+    #name-tainan {
+        top: 50vw;
+        left: 8vw;
+    }
+    #name-kaohsiung {
+        top: 54vw;
+        left: 16vw;
+    }
+    #name-pingtung {
+        top: 64vw;
+        left: 15vw;
+    }
+    #name-yilan {
+        top: 17vw;
+        left: 36vw;
+    }
+    #name-hualien {
+        top: 35vw;
+        left: 32vw;
+    }
+    #name-taitung {
+        top: 57vw;
+        left: 25vw;
+    }
+}
 
-.twt-map-name {
-    font-size: 2vw;
-}
-.twt-map-name-1 {
-    font-size: 1.3vw;
-}
-
-#name-keelung {
-    top: 5vw;
-    left: 38vw;
-}
-#name-taipei {
-    top: 5vw;
-    left: 34.1vw;
-}
-#name-newtaipei {
-    top: 10vw;
-    left: 33vw;
-}
-#name-taoyuan {
-    top: 8.5vw;
-    left: 25.5vw;
-}
-#name-hsinchu {
-    top: 14vw;
-    left: 24vw;
-}
-#name-miaoli {
-    top: 19vw;
-    left: 21vw;
-}
-#name-taichung {
-    top: 25vw;
-    left: 19vw;
-}
-#name-changhua {
-    top: 32vw;
-    left: 10vw;
-}
-#name-nantou {
-    top: 34vw;
-    left: 22vw;
-}
-#name-yunlin {
-    top: 37.1vw;
-    left: 9vw;
-}
-#name-chiayi {
-    top: 42vw;
-    left: 11vw;
-}
-#name-tainan {
-    top: 50vw;
-    left: 8vw;
-}
-#name-kaohsiung {
-    top: 54vw;
-    left: 16vw;
-}
-#name-pingtung {
-    top: 64vw;
-    left: 15vw;
-}
-#name-yilan {
-    top: 17vw;
-    left: 36vw;
-}
-#name-hualien {
-    top: 35vw;
-    left: 32vw;
-}
-#name-taitung {
-    top: 57vw;
-    left: 25vw;
-}
-}
 @media only screen and (max-width:576px) {
-
-.twt-map-name {
-    font-size: 18px;
-}
-.twt-map-name-1 {
-    font-size: 13px;
-}
-
-#name-keelung {
-    top: 9vw;
-    left: 75vw;
-}
-#name-taipei {
-    top: 9vw;
-    left: 67.1vw;
-}
-#name-newtaipei {
-    top: 17vw;
-    left: 66vw;
-}
-#name-taoyuan {
-    top: 14.5vw;
-    left: 49.5vw;
-}
-#name-hsinchu {
-    top: 25vw;
-    left: 47vw;
-}
-#name-miaoli {
-    top: 35vw;
-    left: 39vw;
-}
-#name-taichung {
-    top: 48vw;
-    left: 33vw;
-}
-#name-changhua {
-    top: 61vw;
-    left: 21vw;
-}
-#name-nantou {
-    top: 65vw;
-    left: 42vw;
-}
-#name-yunlin {
-    top: 71.1vw;
-    left: 18vw;
-}
-#name-chiayi {
-    top: 80vw;
-    left: 23vw;
-}
-#name-tainan {
-    top: 97vw;
-    left: 17vw;
-}
-#name-kaohsiung {
-    top: 103vw;
-    left: 31vw;
-}
-#name-pingtung {
-    top: 122vw;
-    left: 31vw;
-}
-#name-yilan {
-    top: 31vw;
-    left: 72vw;
-}
-#name-hualien {
-    top: 62vw;
-    left: 63vw;
-}
-#name-taitung {
-    top: 103vw;
-    left: 52vw;
-}
+    .twt-map-name {
+        font-size: 18px;
+    }
+    .twt-map-name-1 {
+        font-size: 13px;
+    }
+    #name-keelung {
+        top: 9vw;
+        left: 75vw;
+    }
+    #name-taipei {
+        top: 9vw;
+        left: 67.1vw;
+    }
+    #name-newtaipei {
+        top: 17vw;
+        left: 66vw;
+    }
+    #name-taoyuan {
+        top: 14.5vw;
+        left: 49.5vw;
+    }
+    #name-hsinchu {
+        top: 25vw;
+        left: 47vw;
+    }
+    #name-miaoli {
+        top: 35vw;
+        left: 39vw;
+    }
+    #name-taichung {
+        top: 48vw;
+        left: 33vw;
+    }
+    #name-changhua {
+        top: 61vw;
+        left: 21vw;
+    }
+    #name-nantou {
+        top: 65vw;
+        left: 42vw;
+    }
+    #name-yunlin {
+        top: 71.1vw;
+        left: 18vw;
+    }
+    #name-chiayi {
+        top: 80vw;
+        left: 23vw;
+    }
+    #name-tainan {
+        top: 97vw;
+        left: 17vw;
+    }
+    #name-kaohsiung {
+        top: 103vw;
+        left: 31vw;
+    }
+    #name-pingtung {
+        top: 122vw;
+        left: 31vw;
+    }
+    #name-yilan {
+        top: 31vw;
+        left: 72vw;
+    }
+    #name-hualien {
+        top: 62vw;
+        left: 63vw;
+    }
+    #name-taitung {
+        top: 103vw;
+        left: 52vw;
+    }
 }

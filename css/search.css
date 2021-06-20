@@ -1,74 +1,77 @@
-.line{
+.line {
     height: 1px;
     margin: 10px auto;
     background-color: #ffffffa1;
 }
 
-
-label{
+label {
     margin-bottom: 0 !important;
-   }
-   .first{
-       display: inline-block;
-       margin-top: 10px;
-       width: 100%;
-   }
+}
+
+.first {
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+
 @media only screen and (min-width: 576px) {
-    .mynewselect{
+    .mynewselect {
         margin: 0px auto 10px auto;
-    width: 45%;
-    background-color: #8ae0e0e0;
-    border-radius: 20px;
-    text-align: center;
+        width: 45%;
+        background-color: #8ae0e0e0;
+        border-radius: 20px;
+        text-align: center;
     }
-    input[type=text],input[type=button],.ra{
+    input[type=text],
+    input[type=button],
+    .ra {
         border-radius: 5px;
-    outline: none;
-    border-style: double;
-    width: 25%;
+        outline: none;
+        border-style: double;
+        width: 25%;
+        cursor: pointer;
     }
-    .showwidth{
+    .showwidth {
         width: 5%;
     }
-    .backdiv{
+    .backdiv {
         margin: 0px auto 10px auto;
-    width: 45%;
+        width: 45%;
     }
-    .back{
+    .back {
         width: 100%!important;
         margin-bottom: 10px;
         border-style: dashed!important;
     }
-    .back:hover{
+    .back:hover {
         background-color: #dee2e6;
     }
-    
 }
 
 @media only screen and (max-width:576px) {
-    .mynewselect{
+    .mynewselect {
         margin: 0px auto 10px auto;
         background-color: #8ae0e0e0;
-    border-radius: 20px;
-    text-align: center;
+        border-radius: 20px;
+        text-align: center;
     }
-    
-    input[type=text],input[type=button],.ra{
+    input[type=text],
+    input[type=button],
+    .ra {
         border-radius: 5px;
-    outline: none;
-    border-style: double;
-    width: 35%;
-}
-.back{
-    width: 100%!important;
-    margin-bottom: 10px;
-    border-style: dashed!important;
-}
-.back:hover{
-    background-color: #dee2e6;
-}
-#searchtimefrom{
-    margin-bottom: 10px;
-}
-    
+        outline: none;
+        border-style: double;
+        width: 35%;
+    }
+    .back {
+        width: 100%!important;
+        margin-bottom: 10px;
+        border-style: dashed!important;
+    }
+    .back:hover {
+        background-color: #dee2e6;
+    }
+    #searchtimefrom {
+        margin-bottom: 10px;
+    }
 }
