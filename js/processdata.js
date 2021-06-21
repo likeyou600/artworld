@@ -67,12 +67,14 @@ $(function() {
             if (now_site == 'details') {
                 var now_selectdata = [];
                 $.each(data, function(i, v) {
-                    if (data[i].UID == now_UID) {
+                    if (data[i].UID == now_UID) { //用UID去檢索
                         now_selectdata = data[i];
                         return false;
                     }
 
                 });
+
+                //將詳細資料輸出在網頁上
                 $("#name").text(now_selectdata.title);
                 $("#position").text(now_selectdata.showInfo[0].location.substring(0, 2));
                 $("#site_name").text(now_selectdata.showInfo[0].locationName);
@@ -95,6 +97,8 @@ $(function() {
 
 
                 $("#descri").text(now_selectdata.descriptionFilterHtml);
+                //將詳細資料輸出在網頁上
+
 
             }
             //如果現在網站是詳細資料
@@ -103,7 +107,7 @@ $(function() {
             //如果現在網站是搜尋
 
             if (now_site == 'search') {
-                //更新網址
+                //根據目前檢索的內容更新網址
                 $("#searchnew").click(function() {
                     var s = '';
                     $("[name=searchcategory]:checkbox:checked").each(function() {
@@ -120,9 +124,26 @@ $(function() {
                     }
                     window.location.href = "search.html?site=search&category=" + s + "&position=" + searchposition + "&name=" + searchname + "&startime=" + starttime + "&endtime=" + endtime;
                 });
-                //更新網址
+                //根據目前檢索的內容更新網址
 
+                //檢索網址 更新在頁面上
+                if (all[2]) {
+                    $('#searchposition').val(position);
+                }
 
+                if (all[3]) {
+                    $('#searchname').val(searchingname);
+                }
+
+                if (all[4]) {
+                    $('#searchtimefrom').val(urlstarttime);
+                }
+                if (all[5]) {
+                    $('#searchtimeto').val(urlendtime);
+                }
+                //檢索網址 更新在頁面上
+
+                //檢索網址 更新選取種類
                 if (all[1]) {
                     let cccc = 0
                     while (cccc < categoryid.length) {
@@ -166,27 +187,14 @@ $(function() {
                         cccc++
                     }
                 }
+                //檢索網址 更新選取種類
 
 
 
 
-                if (all[2]) {
-                    $('#searchposition').val(position);
-                }
-
-                if (all[3]) {
-                    $('#searchname').val(searchingname);
-                }
-
-                if (all[4]) {
-                    $('#searchtimefrom').val(urlstarttime);
-                }
-                if (all[5]) {
-                    $('#searchtimeto').val(urlendtime);
-                }
 
 
-                //
+                //如果有種類 檢索JSON檔裡面的資料
                 if (all[1]) {
                     let filterdata_count = 0;
                     var filterdata = [];
@@ -252,7 +260,7 @@ $(function() {
                         }
                         i++;
                     }
-
+                    //依時間排序
                     function comp(a, b) {
                         return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
                     }
@@ -284,7 +292,7 @@ $(function() {
                         }
                         filterdata = newposidata;
                     }
-
+                    //如果有名稱 去JSON搜尋名稱
                     if (searchingname) {
                         let name_c = 0
                         var newnamedata = [];
@@ -298,6 +306,7 @@ $(function() {
                         }
                         filterdata = newnamedata;
                     }
+                    //如果有名稱 去JSON搜尋名稱
 
                     let fi = 0;
                     var filterdata_category;
@@ -338,9 +347,11 @@ $(function() {
                         fi++;
 
                     }
+                    //最後在TABLE輸出
                     if (show == null) {
                         $("#tableshow").html("<tr>                    <th scope=row>無</th>                    <td>無</td>                    <td>無</td>                    <td>無</td>                    <td>無</td>                    <td>無</td>                  </tr>");
                     }
+                    //最後在TABLE輸出
                     $("#tableshow").html(show);
                 }
                 // 
@@ -532,7 +543,7 @@ $(function() {
         }
 
     };
-
+    //讀取進度
     xhr.addEventListener("progress", updateProgress);
 
     function updateProgress(event) {
